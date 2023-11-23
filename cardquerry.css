@@ -1,0 +1,178 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+main{
+    background-color: black;
+    height: 170vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    flex-wrap: wrap;
+   
+}
+
+section{
+    background-color: #F0DBAF;
+    height: 149vh;
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+article{
+    background-color: purple;
+    width: 25vw;
+    height: 59vh;
+    border-radius: 5px 5px 5px 60px;
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+    
+}
+
+article:nth-child(odd){
+    height: 70vh;
+}
+
+article:nth-child(5){
+    bottom: 8vh;
+}
+
+.cardG{
+    /* height: 30vh;
+    width: 70vw;
+    display: flex; */
+    padding-left: 4rem;
+    padding-top: 3rem;
+    position: relative;
+    z-index: 20;
+}
+
+.theme{
+    background-color: orange;
+    height: 8vh;
+    color: white;
+    position: relative;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    justify-content: center;
+    align-items:center;
+}
+
+h3{
+    color: black;
+}
+
+.cardlogo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardlogo_icon{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.signe_Pls{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration-line: underline;
+    z-index: 20;
+}
+
+article::after{
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 99;
+    background-color: #83A2FF;
+    width: 25vw;
+    height: 59vh;
+    opacity: 0.30;
+    bottom: 53rem;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px){
+    main{
+        background-color: black;
+        height: 350vh;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+    }
+
+   article:nth-child(1n+0){
+        background-color: aliceblue;
+        height: 50vh;
+        width: 70vw;
+   }
+
+   
+article:nth-child(5){
+    bottom: 0;
+}
+
+}
+
+@media only screen and (min-width:425px) and (max-width: 700px){
+
+    main{
+        background-color: cadetblue;
+        height: 700vh;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-around;
+    }
+
+   article:nth-child(1n+0){
+    background-color: palevioletred;
+    height: 80vh;
+    width: 83vw;
+   } 
+
+   
+article:nth-child(5){
+    bottom: 0;
+}
+
+}
+
+@media only screen and (min-width:700px) and (max-width: 900px){
+
+    main{
+        height: 800vh;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-around;
+    }
+
+    article:nth-child(1n+0){
+        height: 90vh;
+        width: 95vw;
+    }
+
+    
+article:nth-child(5){
+    bottom: 0;
+}
+
+}
